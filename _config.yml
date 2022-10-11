@@ -1,0 +1,78 @@
+title: LVTech
+email: lv@luighiviton.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A blog of technology, electronics and programming.
+  Writen by luighiviton.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://lvtech.luighiviton.com" 
+twitter_username: LuighiVZ
+github_username:  LuighiV
+linkedin_username: luighiviton
+
+#SEO info
+tagline: A blog of technology, electronics and programming.
+author: Luighi Viton-Zorrilla
+twitter:
+  username: LuighiVZ
+  card: summary_large_image
+logo: /images/logo.png
+social:
+  name: Luighi Viton-Zorrilla
+  links:
+    - https://www.linkedin.com/in/luighiviton
+    - https://www.twitter.com/LuighiVZ
+    - https://github.com/LuighiV
+
+# Disqus
+disqus:
+  shortname: lvtech-luighiviton-com 
+
+# Enable excerpts
+show_excerpts: true
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from processing.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+header_pages:
+  en:
+    - index.md
+    - en/about.md
+  es:
+    - es/index.md
+    - es/about.md
+
+defaults:
+    -
+     scope:
+         path: es
+     values:
+         lang: es
+         base_url: "/es/"
+         description: >-
+            Un blog de tecnología, electrónica y programación.
+            Escrito por luighiviton.com
+         tagline: Un blog de tecnología, electrónica y programación.
+    -
+     scope:
+         path: en
+     values:
+         lang: en
+         base_url: "/en/"
+         home_url: "/"
