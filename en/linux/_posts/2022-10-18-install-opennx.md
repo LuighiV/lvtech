@@ -212,6 +212,26 @@ $ opennx
 In the specific case of ArchLinux don't forget to exec `rehash` before if you
 want to execute the command in the same terminal just after installing it.
 
+## Update 2023-01-07
+
+After an update, the client OpenNx stops working, and retrieves this error if
+running in console:
+
+```console
+
+opennx: error while loading shared libraries: libtiff.so.5: cannot open shared object file: No such file or directory
+```
+
+After a bit search on Internet we identified that there is a missing package
+which is required for OpenNx to work, `libtiff5`. It can be installed via:
+
+```console
+$ yay -S libtiff5
+```
+
+Once it is installed, the interface can open normally.
+
+
 ## References
 
 - [7 Patch Command Examples to Apply Diff Patch Files in Linux](https://www.thegeekstuff.com/2014/12/patch-command-examples/)
